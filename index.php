@@ -1,10 +1,7 @@
 Welcome to my website
 <br />
 
-<pre>
 <?php
-
-print `ifconfig`;
-
+$output = shell_exec('ifconfig');
+print "<pre>$output</pre>";
 ?>
-</pre>
